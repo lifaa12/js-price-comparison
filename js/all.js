@@ -47,6 +47,7 @@ function initTimeOut(){
     stText.textContent="全部";
 };
 
+
 // 頁首初始化
 header.addEventListener("click",(e)=>{
     tabBtnAll.forEach((item)=>{
