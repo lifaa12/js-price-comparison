@@ -8,6 +8,61 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+    <div class="header">
+        <h1>
+            <a href="#">農產品比價網</a>
+        </h1>
+    </div>
+    <div class="container">
+        <ul class="tab tabban">
+                <li id="taball">全部</li>
+                <li id="tabveg">蔬果</li>
+                <li id="tabfru">水果</li>
+                <li id="tabflo">花卉</li>
+        </ul>
+        <div class="search serban">
+            <span>
+                <label for="ser">作物名稱</label>
+            </span>
+                <input type="search" placeholder="請輸入作物名稱" class="searchbox">
+            <button type="button" class="serbtn">搜尋</button>
+        </div>
+        <div class="search-history" style="display: none">
+            <p>搜尋紀錄:</p>
+            <ul class="history-content">
+            </ul>
+        </div>
+        <div class="status-filter">
+            <p>目前顯示為「<span class="status-text"></span>」的比價結果</p>
+            <select name="filter" class="select">
+                <option style="display: none">排序篩選</option>
+                <option value="上價">依上價排序</option>
+                <option value="中價">依中價排序</option>
+                <option value="下價">依下價排序</option>
+                <option value="平均價">依平均價排序</option>
+                <option value="交易量">依交易量排序</option>
+            </select>
+        </div>
+        <div class="content">
+            <table class="content-table">
+                <thead>
+                <tr class="content-table-icon">
+                    <th class="ta-l">作物名稱</th>
+                    <th>市場名稱</th>
+                    <th>上價<span class="content-act-non"><i class="fa-solid fa-caret-up content-icon-up"></i><i class="fa-solid fa-caret-up fa-rotate-180 content-icon-down"></i></span></th>
+                    <th>中價<span class="content-act-non"><i class="fa-solid fa-caret-up content-icon-up"></i><i class="fa-solid fa-caret-up fa-rotate-180 content-icon-down"></i></span></th>
+                    <th>下價<span class="content-act-non"><i class="fa-solid fa-caret-up content-icon-up"></i><i class="fa-solid fa-caret-up fa-rotate-180 content-icon-down"></i></span></th>
+                    <th>平均價<span class="content-act-non"><i class="fa-solid fa-caret-up content-icon-up"></i><i class="fa-solid fa-caret-up fa-rotate-180 content-icon-down"></i></span></th>
+                    <th>交易量<span class="content-act-non"><i class="fa-solid fa-caret-up content-icon-up"></i><i class="fa-solid fa-caret-up fa-rotate-180 content-icon-down"></i></span></th>
+                </tr>
+                </thead>
+                <tbody class="table">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/c843b7459b.js" crossorigin="anonymous"></script>
     <script src="/js/all.js"></script>
 </body>
 </html>
