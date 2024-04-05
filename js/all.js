@@ -43,6 +43,7 @@ function init(){
 function initTimeOut(){
     taball.classList.add('tabact');
     tabBtn.classList.remove('tabban');
+    // searchDiv.classList.remove('serban');
     input.removeAttribute('disabled');
     stText.textContent="全部";
 };
@@ -54,7 +55,7 @@ header.addEventListener("click",(e)=>{
         item.classList.remove('tabact');
     });
     tabBtn.classList.add('tabban');
-    searchDiv.classList.add('serban');
+    // searchDiv.classList.add('serban');
     init();
     setTimeout('renderData(data)',1000);
 });

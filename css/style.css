@@ -67,17 +67,6 @@ body{
     justify-content: center;
     margin: 1.3rem 0 1rem 0;
 }
-.serban .searchbox{
-    cursor: no-drop;
-}
-.serban .serbtn{
-    cursor: no-drop;
-}
-.serban .serbtn:hover{
-    background: #899E39;
-    color:#fff; 
-}
-    
 .search span{
     border: 2px solid #899E39;
     border-radius: 4px 0 0 4px;
