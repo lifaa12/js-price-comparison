@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>農產品比價網</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -43,6 +43,9 @@
                 <option value="交易量">依交易量排序</option>
             </select>
         </div>
+        <div class="search-count" style="display: none;">
+            <p>共<span id="totaldata"></span>筆資料&nbsp&nbsp第<span id="currentpage"></span>頁/<span id="totalpage"></span>頁</p>
+        </div>
         <div class="content">
             <table class="content-table">
                 <thead>
@@ -59,6 +62,18 @@
                 <tbody class="table">
                 </tbody>
             </table>
+            <div class="pages" style="display: none;">
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-angles-left" id="p-first"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-angle-left" id="p-pre"></i></a></li>
+                </ul>
+                <ul class="pagenum">
+                </ul>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-angle-right" id="p-nex"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-angles-right" id="p-last"></i></a></li>
+                </ul>
+            </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
